@@ -5,10 +5,7 @@ from openpyxl.chart import BarChart, Reference
 def process_workbook(filename):
     wb = xl.load_workbook(filename)
     sheet = wb['Sheet1']
-    # cell = sheet['a1']
-    # cell = sheet.cell(1, 1)
-    # print(cell.value)
-    # print(sheet.max_row)
+
 
     for row in range(2, sheet.max_row+1):
         cell = sheet.cell(row, 3)
